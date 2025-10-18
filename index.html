@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a
+              class="navbar-brand shadow p-3 mb-5 bg-body-tertiary rounded"
+              href="#"
+              ><img width="50px" src="./src/img/logoVA 1.jpg" alt="logo"
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                </li>
+                <div class="container-about-us">
+                  <h6 class="about-us-text">громадська організація</h6>
+                  <img src="./src/img/AlVe.png" alt="about-us" />
+                  <h6 class="">
+                    На захисті прав військово-службовців, ветеранів війни і
+                    військової служби, а також членів їх родин
+                  </h6>
+                </div>
+              </ul>
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn bg-light" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <section class="news">
+        <div class="container-fluid">
+          <ul class="news-list text-center">
+            <li
+              class="news-item justify-content-center border rounded-4 mx-auto p-2 bg-body-tertiary"
+            >
+              item
+            </li>
+            <li
+              class="news-item justify-content-center border rounded-4 mx-auto p-2 bg-body-tertiary"
+            >
+              item
+            </li>
+            <li
+              class="news-item justify-content-center border rounded-4 mx-auto p-2 bg-body-tertiary"
+            >
+              item
+            </li>
+            <li
+              class="news-item justify-content-center border rounded-4 mx-auto p-2 bg-body-tertiary"
+            >
+              item
+            </li>
+            <li
+              class="news-item justify-content-center border rounded-4 mx-auto p-2 bg-body-tertiary"
+            >
+              item
+            </li>
+            <li
+              class="news-item justify-content-center border rounded-4 mx-auto p-2 bg-body-tertiary"
+            >
+              item
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="about row">
+        <div
+          class="container-fluid grid row d-flex justify-content-center m-5 d-grid gap-3"
+        >
+          <img
+            class="img-fluid about-image p-2 col d-flex justify-content-around rounded-5"
+            src="./src/img/about.jpg"
+            alt="about"
+          />
+          <h2 class="m-5 about-text col d-flex justify-content-around fw-bold">
+            "Альянс Ветеранів" — це енергійна громадська організація
+            Чорноморської громади Одеської області, яка допомагає ветеранам,
+            військовим і їхнім родинам. Ми створюємо унікальні проєкти, будуємо
+            партнерства й надаємо правову, психологічну та реабілітаційну
+            підтримку. Разом ми об’єднуємо громаду, даруємо турботу та надихаємо
+            на нові досягнення!
+          </h2>
+        </div>
+      </section>
+      <section class="projects">
+        <div class="container-fluid row gap-4">
+          <h2 class="projects-title d-flex justify-content-center">
+            Корисні проєкти партнерів
+          </h2>
+          <div class="card" style="width: 20%">
+            <div class="card-body">
+              <h5 class="card-title">Правовий навігатор</h5>
+              <p class="card-text">
+                Створено командою Правозахисного центру “Принцип”. Інструмент
+                допомагає військовим, ветеранам і їхнім родинам у базових
+                юридичних питаннях, під час лікування поранень та з пошуком
+                контактів.
+              </p>
+              <a href="#" class="btn btn-primary">Навігатор тут</a>
+            </div>
+          </div>
+          <div class="card" style="width: 20%">
+            <div class="card-body">
+              <h5 class="card-title">В Україні запустився сервіс «База»</h5>
+              <p class="card-text">
+                застосунок, створений спеціально для ветеранів, у якому вони
+                можуть отримати необхідну психологічну допомогу та підтримку.
+                Додаток має кілька версій, що забезпечують зручний доступ до
+                сервісу з різних пристроїв.
+              </p>
+              <a
+                href="https://apps.apple.com/ua/app/%D0%B1%D0%B0%D0%B7%D0%B0/id6449841911?l=uk"
+                class="btn btn-primary"
+                >iOS</a
+              >
+              та
+              <a
+                href="https://play.google.com/store/apps/details?id=com.vilniy_vybir"
+                class="btn btn-primary"
+                >Android</a
+              >
+            </div>
+          </div>
+          <div class="card" style="width: 20%">
+            <div class="card-body">
+              <h5 class="card-title">Програма реінтеграції ветеранів IREX</h5>
+              <p class="card-text">
+                Програма реінтеграції ветеранів IREX має на меті підвищити
+                якість і доступність послуг для ветеранів України, щоб
+                підтримати їх під час переходу від військової служби до
+                цивільного життя та полегшити процес адаптації.
+              </p>
+              <a
+                href="https://veteran-reintegration.in.ua/"
+                class="btn btn-primary"
+                >IREX тут</a
+              >
+            </div>
+          </div>
+          <div class="card" style="width: 20%">
+            <div class="card-body">
+              <h5 class="card-title">Юридична Сотня</h5>
+              <p class="card-text">
+                надання безоплатної  правової  допомоги, інформування про права 
+                та гарантій військових та ветеранів, глибока та всебічна
+                юридична аналітика у сфері ветеранських справ та адвокатування 
+                системних змін у законодавстві.
+              </p>
+              <a
+                href="https://veteran-reintegration.in.ua/"
+                class="btn btn-primary"
+                >Юридична Сотня тут</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+      integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
